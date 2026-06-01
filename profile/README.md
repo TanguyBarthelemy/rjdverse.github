@@ -14,11 +14,11 @@ rjdverse is an organization dedicated to creating **R packages giving access to 
 
 [JDemetra+](https://github.com/jdemetra) is a versatile time series analysis software, whose core routines are written in Java and also accessible via a Graphical User Interface (GUI).
 
-[[Documentation]](https://jdemetra-new-documentation.netlify.app/) | [[Blog]](https://jdemetra-universe-blog.netlify.app/)
+[[Documentation]](https://doc.jdemetra.org/) | [[Blog]](https://blog.jdemetra.org/)
 
 Installation procedure and basic examples are given in the readme file of each package. Their documentation is available via GitHub pages.
 
-Running rjd3 packages requires **Java 17 or higher**. How to set up such a configuration in R is explained [here](https://jdemetra-new-documentation.netlify.app/#Rconfig) 
+Running rjd3 packages requires **Java 17 or higher**. How to set up such a configuration in R is explained [here](https://doc.jdemetra.org/#Rconfig) 
 
 Below is the list of R packages available from this page (relying on JDemetra+ core Java libraries) and links to add-on packages:
 
