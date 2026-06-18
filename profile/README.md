@@ -87,10 +87,16 @@ All v2 related packages are available on CRAN.
 ### Dependency relations 
 
 ```mermaid
+
 flowchart TB
     subgraph rjd3toolkit_depends [" "]
         direction TB
 
+        rjd3providers --> rjd3workspace
+        
+        rjd3xjars --> rjd3highfreq
+        rjd3xjars --> rjd3sts
+        rjd3xjars --> rjd3stl
 
         subgraph rjd3_other[" "]
             rjd3bench
@@ -103,7 +109,6 @@ flowchart TB
             rjd3tramoseats
         end
 
-        rjd3providers --> rjd3workspace
         rjd3x13_tramo --> rjd3workspace
 
         rjd3x13_tramo --> ggdemetra3
@@ -112,13 +117,14 @@ flowchart TB
         rjd3filters --> ggdemetra3
         
         rjd3filters --> rjd3x11plus
-        rjd3sts --> rjd3highfreq
-        rjd3highfreq --> rjd3stl
 
     end
 
+    rjd3jars --> rjd3toolkit
     rjd3toolkit --> rjd3toolkit_depends
 
+  click rjd3jars "https://github.com/rjdverse/rjd3jars" _blank
+  click rjd3xjars "https://github.com/rjdverse/rjd3xjars" _blank
   click rjd3toolkit "https://github.com/rjdverse/rjd3toolkit" _blank
   click rjd3nowcasting "https://github.com/rjdverse/rjd3nowcasting" _blank
   click rjd3stl "https://github.com/rjdverse/rjd3stl" _blank
